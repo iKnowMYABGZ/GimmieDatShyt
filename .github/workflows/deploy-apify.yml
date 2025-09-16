@@ -1,0 +1,30 @@
+name: Deploy to Apify Actor
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'apify.json'
+      - 'Dockerfile'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci --legacy-peer-deps
+      - name: Install Apify CLI
+        run: npm i -g apify@^3
+      - name: Apify login
+        env:
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: apify login --token "$APIFY_TOKEN"
+      - name: Push to existing actor
+        run: apify push --no-prompt --purge --actor-id "caring_dizi~blog-content-scraper-fixed"
