@@ -1,0 +1,28 @@
+{
+  "title": "Actor input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "List of URLs to start from.",
+      "editor": "requestListSources",
+      "prefill": [
+        { "url": "https://example.com" }
+      ]
+    },
+    "maxRequests": {
+      "title": "Max requests",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10000,
+      "default": 100
+    },
+    "headless": {
+      "title": "Headless",
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

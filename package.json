@@ -1,0 +1,17 @@
+{
+  "name": "gimmiedatshyt",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Apify actor for scraping with Playwright + Crawlee",
+  "scripts": {
+    "start": "node src/main.js",
+    "dev": "node --watch src/main.js",
+    "test": "node -e \"console.log('no tests')\""
+  },
+  "dependencies": {
+    "apify": "^3.1.10",
+    "crawlee": "^3.8.2",
+    "playwright": "^1.47.2"
+  }
+}

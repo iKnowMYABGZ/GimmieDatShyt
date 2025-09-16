@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "gimmiedatshyt",
+  "title": "GimmieDatShyt Scraper",
+  "version": "0.1",
+  "description": "Apify actor using Playwright + Crawlee",
+  "dockerfile": "Dockerfile",
+  "builds": [
+    { "platform": "linux/amd64", "cmd": "npm --quiet ci" }
+  ],
+  "input": "./input_schema.json"
+}

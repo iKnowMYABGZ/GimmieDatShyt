@@ -1,7 +1,26 @@
 # 📄 Simple Web Content Scraper
 # GimmieDatShyt
 A new Apify scraper based on the crawlee platform
+GimmieDatShyt Scraper
 
+Apify actor using Playwright + Crawlee. Configure input in `input_schema.json` and run locally with Node or on Apify.
+
+Quick start:
+
+```bash
+npm ci
+npm start
+```
+
+Input example:
+
+```json
+{
+  "startUrls": [{"url": "https://example.com"}],
+  "maxRequests": 50,
+  "headless": true
+}
+```
 This actor crawls blogs, news sites, and websites and extracts **valuable content** including:
 
 - ✅ Page Title
