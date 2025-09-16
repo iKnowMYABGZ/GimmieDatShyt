@@ -26,5 +26,5 @@ jobs:
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: apify login --token "$APIFY_TOKEN"
-      - name: Push to existing actor
-        run: apify push --no-prompt --purge --actor-id "caring_dizi~blog-content-scraper-fixed"
+      - name: Push actor from apify.json
+        run: apify push --no-prompt --purge

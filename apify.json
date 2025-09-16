@@ -1,6 +1,6 @@
 {
   "actorSpecification": 1,
-  "name": "blog-content-scraper-fixed",
+  "name": "gimmiedatshyt",
   "title": "GimmieDatShyt Scraper",
   "version": "0.1",
   "description": "Apify actor using Playwright + Crawlee",
