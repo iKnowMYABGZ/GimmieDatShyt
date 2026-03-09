@@ -17,4 +17,4 @@ jobs:
       - name: Push actor
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: npx -y apify-cli@latest push caring_dizi/gimmie-dat-shyt --force
+        run: npx -y apify-cli@latest push caring_dizi/gimmie-dat-shyt --dir "." --force
