@@ -23,6 +23,6 @@ jobs:
       - name: Apify login
         env:
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
-        run: npx apify@^3 login --token "$APIFY_TOKEN"
+        run: npx -p apify@^3 apify login --token "$APIFY_TOKEN"
       - name: Push actor from apify.json
-        run: npx apify@^3 push --no-prompt --purge
+        run: npx -p apify@^3 apify push --no-prompt --purge
