@@ -1,0 +1,134 @@
+{
+  "actorSpecification": 1,
+  "title": "Gimmie Dat Shyt Dataset",
+  "fields": {
+    "url": {
+      "type": "string",
+      "title": "URL",
+      "description": "The URL that was scraped",
+      "isSystemField": false
+    },
+    "title": {
+      "type": "string", 
+      "title": "Page Title",
+      "description": "The title of the webpage",
+      "isSystemField": false
+    },
+    "meta": {
+      "type": "object",
+      "title": "Metadata",
+      "description": "Page metadata including Open Graph tags",
+      "isSystemField": false
+    },
+    "articles": {
+      "type": "array",
+      "title": "Articles",
+      "description": "Extracted article content",
+      "isSystemField": false
+    },
+    "images": {
+      "type": "array",
+      "title": "Images",
+      "description": "List of image URLs found on the page",
+      "isSystemField": false
+    },
+    "videos": {
+      "type": "array",
+      "title": "Videos", 
+      "description": "List of video URLs found on the page",
+      "isSystemField": false
+    },
+    "links": {
+      "type": "array",
+      "title": "Links",
+      "description": "List of links found on the page",
+      "isSystemField": false
+    },
+    "content": {
+      "type": "string",
+      "title": "Content",
+      "description": "Full text content of the page",
+      "isSystemField": false
+    },
+    "exports": {
+      "type": "object",
+      "title": "Exports",
+      "description": "Screenshot and export information",
+      "isSystemField": false
+    },
+    "autoTag": {
+      "type": "array",
+      "title": "Auto Tags",
+      "description": "Automatically generated tags based on content",
+      "isSystemField": false
+    },
+    "contentType": {
+      "type": "string",
+      "title": "Content Type",
+      "description": "Type of content scraped",
+      "isSystemField": false
+    },
+    "scrapedAt": {
+      "type": "string",
+      "title": "Scraped At",
+      "description": "Timestamp when the page was scraped",
+      "isSystemField": false
+    },
+    "processingTimeMs": {
+      "type": "number",
+      "title": "Processing Time (ms)",
+      "description": "Time taken to process the page in milliseconds",
+      "isSystemField": false
+    },
+    "preview": {
+      "type": "object",
+      "title": "Preview",
+      "description": "Preview information for the page",
+      "isSystemField": false
+    }
+  },
+  "views": [
+    {
+      "id": "default",
+      "title": "Default View",
+      "fields": [
+        {
+          "id": "url",
+          "title": "URL",
+          "type": "string",
+          "order": "asc"
+        },
+        {
+          "id": "title", 
+          "title": "Title",
+          "type": "string",
+          "order": "asc"
+        },
+        {
+          "id": "images",
+          "title": "Images",
+          "type": "array",
+          "order": "asc"
+        },
+        {
+          "id": "videos",
+          "title": "Videos", 
+          "type": "array",
+          "order": "asc"
+        },
+        {
+          "id": "links",
+          "title": "Links",
+          "type": "array",
+          "order": "asc"
+        },
+        {
+          "id": "scrapedAt",
+          "title": "Scraped At",
+          "type": "string",
+          "order": "desc"
+        }
+      ]
+    }
+  ]
+}
