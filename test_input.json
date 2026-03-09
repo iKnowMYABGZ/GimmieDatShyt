@@ -1,0 +1,9 @@
+{
+  "startUrls": [{"url": "https://example.com"}],
+  "maxRequests": 5,
+  "headless": true,
+  "saveScreenshot": true,
+  "screenshotFullPage": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 800
+}

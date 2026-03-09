@@ -1,0 +1,9 @@
+{
+  "startUrls": [{"url": "https://www.cnn.com"}],
+  "maxRequests": 3,
+  "headless": true,
+  "saveScreenshot": true,
+  "screenshotFullPage": true,
+  "viewportWidth": 1280,
+  "viewportHeight": 800
+}
