@@ -1,0 +1,70 @@
+{
+    "actorSpecification": 1,
+    "name": "gimmie-dat-shyt",
+    "title": "Gimmie Dat Shyt - Universal Media Scraper",
+    "version": "1.0",
+    "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "url",
+              "title",
+              "meta",
+              "articles",
+              "images",
+              "videos",
+              "links",
+              "exports",
+              "contentType"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "url": {
+                "label": "🌐 URL",
+                "format": "link"
+              },
+              "title": {
+                "label": "📰 Title",
+                "format": "text"
+              },
+              "meta": {
+                "label": "🧠 Meta",
+                "format": "object"
+              },
+              "articles": {
+                "label": "📄 Articles",
+                "format": "array"
+              },
+              "images": {
+                "label": "🖼️ Images",
+                "format": "array"
+              },
+              "videos": {
+                "label": "🎥 Videos",
+                "format": "object"
+              },
+              "links": {
+                "label": "🔗 Links",
+                "format": "array"
+              },
+              "exports": {
+                "label": "📤 Export Links",
+                "format": "object"
+              },
+              "contentType": {
+                "label": "📂 Type",
+                "format": "text"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
