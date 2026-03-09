@@ -10,8 +10,8 @@
     "test": "node -e \"console.log('no tests')\""
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.645.0",
-    "@aws-sdk/s3-request-presigner": "^3.645.0",
+  "@aws-sdk/client-s3": "^3.645.0",
+  "@aws-sdk/s3-request-presigner": "^3.645.0",
     "apify": "^3.1.10",
     "crawlee": "^3.8.2",
     "playwright": "^1.56.1"
